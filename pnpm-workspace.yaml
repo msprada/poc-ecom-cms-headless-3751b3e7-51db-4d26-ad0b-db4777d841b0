@@ -1,6 +1,7 @@
 packages:
   - 'apps/*'
   - 'libs/*'
+  - 'tools/*'
 allowBuilds:
   esbuild: true
   sharp: set this to true or false
