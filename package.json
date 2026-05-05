@@ -1,0 +1,20 @@
+{
+  "name": "poc-ecom-cms-headless-3751b3e7-51db-4d26-ad0b-db4777d841b0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.0.5",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}
