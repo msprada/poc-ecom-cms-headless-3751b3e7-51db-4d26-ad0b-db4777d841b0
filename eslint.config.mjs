@@ -4,6 +4,8 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import { defineConfig } from "eslint/config";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
+
 
 export default defineConfig([
   {
@@ -25,5 +27,6 @@ export default defineConfig([
   },
   tseslint.configs.recommended,
   eslintPluginAstro.configs.recommended,
-  jsxA11y.flatConfigs.recommended
+  jsxA11y.flatConfigs.recommended,
+  eslintConfigPrettier,
 ]);
