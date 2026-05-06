@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src/**/*{.astro,ts}"
+    "lint": "eslint 'src/**/*.{astro,ts}'",
+    "format": "prettier --write 'src/**/*.{astro,ts}'"
   },
   "dependencies": {
     "astro": "^6.2.2"

@@ -8,6 +8,7 @@
     "test": "pnpm -r test",
     "dev": "pnpm -r --parallel dev",
     "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
     "clean": "pnpm -r clean",
     "type-check": "pnpm -r type-check"
   },
@@ -25,9 +26,12 @@
     "@eslint/js": "^10.0.1",
     "@types/node": "^25.6.0",
     "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "^0.14.1",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.2"
   }
