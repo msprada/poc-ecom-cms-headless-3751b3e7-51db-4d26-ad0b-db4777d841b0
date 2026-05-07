@@ -1,6 +1,10 @@
 packages:
-  - 'apps/*'
-  - 'libs/*'
+  - "apps/*"
+  - "libs/*"
 allowBuilds:
+  "@medusajs/telemetry": true
+  "@swc/core": true
   esbuild: true
-  sharp: set this to true or false
+  msgpackr-extract: true
+  protobufjs: true
+  sharp: true
