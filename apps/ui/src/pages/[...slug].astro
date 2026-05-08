@@ -11,8 +11,20 @@ const { data } = await storyblokApi.get(`cdn/stories/${slug || "home"}`, {
 });
 
 const story = data.story;
+const bodySet = data.story.content.body;
+
+console.log("Story:", story);
+console.log("Body Set:", bodySet);
 ---
 
 <Layout>
-	<StoryblokComponent blok={story.content} />
+	{
+		bodySet?.map((blok) => {
+			if (blok.component === "teaser") {
+				return <h1 style="color:red;">{blok.headline}</h1>;
+			} else {
+				return <StoryblokComponent blok={blok} />;
+			}
+		})
+	}
 </Layout>
